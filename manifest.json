@@ -1,0 +1,48 @@
+{
+    //Bắt buộc
+    /*Phiến bản minecraft dưới 1.13 format_version là 1*/
+    /*Phiến bản minecraft trên 1.13 format_version là 2*/
+    /*Có lẽ sẽ cập nhật thêm trong tương lai*/
+    "format_version": 2,
+    //Bắt buộc
+    /*Thuộc tính của addon trong minecraft*/
+    "header": {
+        //Bắt buộc
+        //Tên hiển thị của addon
+        "name": "Tutorials Addon",
+        //Thông tin về addon, ví dụ: cách sử dụng, tác giả,...
+        "description": "facebook: fb.com/ducmkpro\nCreated by DucCyberBro, Copyright 2021",
+        //Bắt buộc
+        //id duy nhất: id duy nhất cũng giống như số cmnd, không thể trùng nhau với addon khác
+        //nếu không sẽ không hiển thị 1 trong nhiều addon cùng uuid
+        "uuid": "e21774f3-4c36-4738-889f-327b955aed3c",
+        //Bắt buộc
+        //số phiên bản của addon, số phiên bản lớn hơn nếu cần cập nhật
+        "version": [0,0,1],
+        //Bắt buộc nếu format_version lớn hơn hoặc bằng 2
+        //số phiên bản minecraft tối thiểu để addon hoạt động đúng
+        "min_engine_version": [1,16,210]
+    },
+    //Bắt buộc
+    //xác định đây là khai báo behavior pack hay resource pack
+    "modules": [{
+        //Bắt buộc
+        //behavior pack: data
+        //resource pack: resources
+        "type": "data",
+        "uuid": "57ce62b2-ca9d-4072-a0e8-04a844cb7129",
+        "version": [1,0,0]
+    }]
+    //hiện tại không cần phụ thuộc addon khác nên mình sẽ chú thích nó
+    /*xoá dòng này để bỏ chú thích
+    ,
+    //Không bắt buộc
+    //Khai báo những addon mà nếu không có nó thì không thể hoạt động đúng cách
+    "dependencies": [{
+        //id định danh của addon cần thiết
+        "uuid": "",
+        //phiên bản của addon cần thiết
+        "version": []
+    }]
+    xoá dòng này để bỏ chú thích*/
+}
